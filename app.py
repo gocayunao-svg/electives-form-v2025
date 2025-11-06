@@ -259,7 +259,7 @@ if st.session_state.is_submitting and not st.session_state.form_submitted:
                 now = datetime.now(tz=tz)
                 # Formato: 03-11-2025 21:58:30 (Día-Mes-Año Hora:Min:Seg)
                 # Le añadimos (UTC) para que el usuario sepa la zona horaria
-                timestamp_string = now.strftime("%d-%m-%Y %H:%M:%S (UTC)")
+                timestamp_string = now.strftime("%d-%m-%Y %H:%M:%S")
                 email_sent = send_confirmation_email(
                     name,
                     run,
